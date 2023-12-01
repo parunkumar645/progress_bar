@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f7f9;
+  font-family: "Muli", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #3498db; /* Set the text color for the h1 element */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  font-size: 2.5em; /* Increase the font size */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+}
+
+.progress-container {
+  display: flex;
+  max-width: 100%;
+  width: 350px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.progress-container::before {
+  content: "";
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #e0e0e0;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: #3498db;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 30px;
+  background-color: #3498db;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  background-color: #e0e0ee;
+  cursor: not-allowed;
+}
+
+.btn:focus {
+  outline: 0;
+}
+body {
+  background-color: #16202c; /* New background color */
+  color: #fff; /* Text color for better contrast */
+
+  /* ... (existing styles) */
+}
+
+.container {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+}
+
+.progress-container::before {
+  background-color: #34495e; /* Darker background color for the progress bar */
+}
+
+.progress {
+  background-color: #e74c3c; /* Change the progress bar color */
+}
+
+.circle {
+  background-color: #3498db; /* Change the circle background color */
+  border-color: #fff; /* Change the border color for better visibility */
+}
+
+.btn {
+  background-color: #2ecc71; /* Change the button color */
+}
+
+.btn:hover {
+  background-color: #27ae60; /* Darker color on hover for the button */
+}
+.circle {
+  background-color: #3498db; /* Change the circle background color */
+  border-color: #fff; /* Change the border color for better visibility */
+  height: 40px; /* Increase the height */
+  width: 40px; /* Increase the width */
+}
